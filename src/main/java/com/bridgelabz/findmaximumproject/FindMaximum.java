@@ -13,4 +13,11 @@ public class FindMaximum {
                 ((secondValue.compareTo(maximum) > 0) ? secondValue : firstValue);
         return maximumInteger;
     }
+
+    public Float getMaximumFloat(Float firstValue, Float secondValue, Float thirdValue) {
+        Float maximum=firstValue;
+        Float maximumFloat = thirdValue > (secondValue.compareTo(maximum) > 0 ? secondValue : firstValue) ? thirdValue :
+                ((secondValue.compareTo(maximum) > 0) ? secondValue : firstValue);
+        return maximumFloat;
+    }
 }
