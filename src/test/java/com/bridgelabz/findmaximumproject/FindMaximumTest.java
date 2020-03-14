@@ -18,4 +18,11 @@ public class FindMaximumTest {
         Integer maximumValue = findMaximum.getMaximumInteget(8,10,9);
         Assert.assertEquals((Integer) 10, maximumValue);
     }
+
+    @Test
+    public void givenThreeIntegers_WhenMaximumAtLast_ReturnMaximumValue() {
+        FindMaximum findMaximum = new FindMaximum();
+        Integer maximumValue = findMaximum.getMaximumInteget(8,9,10);
+        Assert.assertEquals((Integer) 10, maximumValue);
+    }
 }
