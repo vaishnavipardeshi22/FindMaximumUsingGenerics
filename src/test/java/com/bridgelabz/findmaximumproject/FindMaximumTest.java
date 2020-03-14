@@ -25,4 +25,11 @@ public class FindMaximumTest {
         Integer maximumValue = findMaximum.getMaximumInteget(8,9,10);
         Assert.assertEquals((Integer) 10, maximumValue);
     }
+
+    @Test
+    public void givenThreeFloats_WhenMaximumAtStart_ReturnMaximumValue() {
+        FindMaximum findMaximum = new FindMaximum();
+        Float maximumValue = findMaximum.getMaximumFloat(10.2f,9.2f,8.2f);
+        Assert.assertEquals((Float) 10.2f, maximumValue);
+    }
 }
