@@ -53,4 +53,11 @@ public class FindMaximumTest {
         String maximumValue = findMaximum.getMaximumString("orange", "apple", "banana");
         Assert.assertEquals( "orange", maximumValue);
     }
+
+    @Test
+    public void givenThreeStrings_WhenMaximumAtMiddle_ReturnMaximumValue() {
+        FindMaximum findMaximum = new FindMaximum();
+        String maximumValue = findMaximum.getMaximumString( "apple","orange", "banana");
+        Assert.assertEquals( "orange", maximumValue);
+    }
 }
