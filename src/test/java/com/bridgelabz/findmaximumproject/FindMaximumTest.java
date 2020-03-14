@@ -67,4 +67,11 @@ public class FindMaximumTest {
         String maximumValue = findMaximum.getMaximumString( "apple", "banana", "orange");
         Assert.assertEquals( "orange", maximumValue);
     }
+
+    @Test
+    public void givenThreeStringsWithUpperCase_WhenMaximumAtStart_ReturnMaximumValue() {
+        FindMaximum findMaximum = new FindMaximum();
+        String maximumValue = findMaximum.getMaximumString("ORANGE", "APPLE", "BANANA");
+        Assert.assertEquals( "ORANGE", maximumValue);
+    }
 }
