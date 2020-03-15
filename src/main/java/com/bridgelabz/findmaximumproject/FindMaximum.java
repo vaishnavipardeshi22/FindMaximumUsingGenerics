@@ -6,29 +6,13 @@ public class FindMaximum {
         System.out.println("******************** WELCOME TO FIND MAXIMUM ********************");
     }
 
-    //METHOD TO GET MAXIMUM INTEGER VALUE
-    public Integer getMaximumInteget(Integer firstValue, Integer secondValue, Integer thirdValue) {
-        Integer maximum=firstValue;
-        Integer maximumInteger = thirdValue > (secondValue.compareTo(maximum) > 0 ? secondValue : firstValue) ? thirdValue :
-                ((secondValue.compareTo(maximum) > 0) ? secondValue : firstValue);
-        return maximumInteger;
-    }
-
-    //METHOD TO GET MAXIMUM FLOAT VALUE
-    public Float getMaximumFloat(Float firstValue, Float secondValue, Float thirdValue) {
-        Float maximum=firstValue;
-        Float maximumFloat = thirdValue > (secondValue.compareTo(maximum) > 0 ? secondValue : firstValue) ? thirdValue :
-                ((secondValue.compareTo(maximum) > 0) ? secondValue : firstValue);
-        return maximumFloat;
-    }
-
-    //METHOD TO GET MAXIMUM STRING VALUE
-    public String getMaximumString(String firstValue, String secondValue, String thirdValue) {
-        String maximum=firstValue;
-        if (secondValue.compareTo(maximum) > 0)
-            maximum = secondValue;
-        if (thirdValue.compareTo(maximum) > 0)
-            maximum = thirdValue;
-        return maximum;
+    //METHOD TO GET MAXIMUM VALUE
+    public <T extends Comparable<T>> T getMaximumValue(T firstValue, T secondValue, T thirdValue) {
+        T maximumValue=firstValue;
+        if (secondValue.compareTo(maximumValue) > 0)
+            maximumValue = secondValue;
+        if (thirdValue.compareTo(maximumValue) > 0)
+            maximumValue = thirdValue;
+        return maximumValue;
     }
 }
