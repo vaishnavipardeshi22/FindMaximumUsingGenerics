@@ -95,4 +95,11 @@ public class FindMaximumTest {
         String maximumValue = findMaximum.getMaximumString("3", "2", "1");
         Assert.assertEquals("3", maximumValue);
     }
+
+    @Test
+    public void givenThreeStringsAsInteger_WhenMaximumAtMiddle_ReturnMaximumValue() {
+        FindMaximum findMaximum = new FindMaximum();
+        String maximumValue = findMaximum.getMaximumString("1", "3", "2");
+        Assert.assertEquals("3", maximumValue);
+    }
 }
