@@ -6,6 +6,10 @@ public class FindMaximum<T extends Comparable<T>> {
     private T secondValue;
     private T thirdValue;
 
+    //DEFAULT CONSTRUCTOR
+    public FindMaximum(){
+    }
+
     //PARAMETERISED CONSTRUCTOR
     public FindMaximum(T firstValue, T secondValue, T thirdValue){
         this.firstValue = firstValue;
