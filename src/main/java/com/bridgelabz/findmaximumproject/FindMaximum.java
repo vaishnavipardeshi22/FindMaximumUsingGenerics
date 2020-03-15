@@ -19,6 +19,7 @@ public class FindMaximum<T extends Comparable<T>> {
 
     //METHOD TO CALL INTERNAL METHOD
     public T getMaximumValue(){
+        printMaximumValue(getMaximumValue(firstValue, secondValue, thirdValue));
         return getMaximumValue(firstValue, secondValue, thirdValue);
     }
 
@@ -30,6 +31,10 @@ public class FindMaximum<T extends Comparable<T>> {
         if (thirdValue.compareTo(maximumValue) > 0)
             maximumValue = thirdValue;
         return maximumValue;
+    }
+
+    public void printMaximumValue(T maximumValue) {
+        System.out.println("Maximum Value : " + maximumValue);
     }
 
     public static void main(String[] args) {
